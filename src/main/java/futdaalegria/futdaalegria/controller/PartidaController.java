@@ -21,7 +21,7 @@ public class PartidaController {
     private OrganizarPartida organizarPartida;
 
     @PostMapping
-    public ResponseEntity<Void> salvarJogador(@Valid @RequestBody Partida partida){
+    public ResponseEntity<Void> salvarPartida(@Valid @RequestBody Partida partida){
         repository.save(partida);
         return ResponseEntity.noContent().build();
     }
