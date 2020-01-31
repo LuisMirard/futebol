@@ -28,7 +28,7 @@ public class PartidaController {
 
     @GetMapping()
     public ResponseEntity<Partida> buscaPorStatusAtiva(){
-        return ResponseEntity.ok().body(repository.findByStatus("ATIVA"));
+        return ResponseEntity.ok().body(repository.findByStatus("ATIVO"));
     }
 
     @GetMapping(path = "/all")
